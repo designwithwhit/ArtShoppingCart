@@ -1,13 +1,4 @@
 
-//Email Newsletter Form
-function capture () {
-  event.preventDefault();
-  var email = document.customerInfo.email.value;
-  console.log("Thanks for signing up for our mailing list, " + email + "!")
-}
-//End Email Newsletter Form
-
-
 	$(".add-to-cart").click(function(event){
 	  event.preventDefault();
 	  var name = $(this).attr("data-name");

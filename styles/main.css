@@ -18,42 +18,6 @@ p {
     margin:0 auto;}
 
 
-
-/***************** NAV *****************/
-/* Base styles that apply to all menus */
-/* .menu-section {
-	margin-bottom: 1em;
-}
-
-.menu ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	background: #4e75c6;
-}
-
-.menu li a {
-	display: block;
-	text-decoration: none;
-	color: white;
-	padding: .6em 1em;
-}
-
-.menu li a:hover {
-	background: hsl(0, 0%, 25%);
-}
-
-/* Styles for Advanced Menu */
-
-/* .advanced-nav li a {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-} */
-
-
-
-
 .header-container {
  display: flex;
  flex-direction: column;
@@ -95,61 +59,14 @@ li a:hover {
     font-size: 1.8em;
 }
 
-/* .button-text {
-    font-size: 1.8em;
-    font-family: 'Open Sans Condensed', sans-serif;
-    text-transform: uppercase;
-}
-
-.button-text span {
-    display: block;
-    font-size: 50%;
-    font-weight: lighter;
-    font-style: italic;
-
-} */
 
 @media screen and (min-width: 30em) {
-
-    /* .advanced-nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .advanced-nav li {
-        display: flex;
-        flex: 1 0 12em;
-    } */
+/*code goes here*/
 
 }
 
 
-/**************** HERO *****************/
-/* .branding{
-  display: inline-flex;
-  flex-wrap:wrap;
-  justify-content: center;
-  align-items: center;
-  width:100%;
-} */
 
-/* header section.hero-image{
-  background: url("../images/header-octopus.jpg");
-} */
-
-/* header img {
-  max-width: 9rem;
-  padding:2em;
-} */
-/* .branding h1{
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size:2em
-} */
-/* h1 .logo-w {
-  font-size: 3.5rem;
-  font-family: 'Open Sans Condensed', sans-serif;
-} */
 
 @media screen and (min-width : 600px) {
  .header-container {
@@ -169,31 +86,12 @@ li a:hover {
 
 
 @media screen and (max-width: 600px) {
-  /* header img {
-    max-width: 2.5rem;
-  }
-  .button-text span{display:none;}
-  .branding h1{font-size:1.5em;}
-  .branding{justify-content: left;} */
+/*code goes here*/
 }
 
 
 
-/**************** Newsletter ****************/
 
-input[type="submit"] {
-  padding: .25rem;
-  background-color: #3D7FCF;
-  font-size: 1rem;
-  color: white;
-    font-family: 'Open Sans Condensed', sans-serif;
-}
-.newsletter {
-  clear:both;
-}
-.newsletter form{
-  padding: 1.5em 0;
-}
 /*********** PRODUCTS SECTION ***********/
 
 /*--------------------------------------------------------------
