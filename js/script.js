@@ -3,6 +3,12 @@
 	  event.preventDefault();
 	  var name = $(this).attr("data-name");
 	  var price = Number($(this).attr("data-price"));
+		var traverseItem = $(this).closest(".item-container").css({border:"1px solid red"});
+		var thumbImg = $(traverseItem).find("picture").html();
+
+		// var thumb = $("picture.thumbnail").html();
+
+		console.log(thumbImg);
 
 	  addItemToCart(name, price, 1);
 	  displayCart();
@@ -20,11 +26,13 @@ function displayCart(){
   var cartArray = listCart();
   var output = "";
 
+
+
   for (var i in cartArray) {
     output += "<li><span class='cart-item-name'>"
 		+cartArray[i].name + "</span><br>"
+		+" Quantity"
 		+" "+cartArray[i].count
-    +" (items)"
     +" <button title='Add Item' class='plus-item' data-name='"
     +cartArray[i].name+"'>+</button>"
     +" <button  title='Subtract Item'class='subtract-item' data-name='"
@@ -158,47 +166,6 @@ displayCart();
 
 
 
-//smooth scrolling
-//
-// Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-      &&
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });
-
-
-
 
   // Get the modal
   var modal = document.getElementById('myModal');
@@ -210,8 +177,10 @@ $('a[href*="#"]')
   var span = document.getElementsByClassName("close")[0];
 
   // When the user clicks the button, open the modal
-  btn.onclick = function() {
+  // btn.onclick = function() {
+	function handleClick(clicked_id){
       modal.style.display = "block";
+			console.log(clicked_id);
   }
 
   // When the user clicks on <span> (x), close the modal

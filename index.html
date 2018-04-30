@@ -24,7 +24,7 @@
        <li><a class="active" title="Shop">Shop</a></li>
        <li class="cart-info" id="top-link">
           <a href="#cart-link">
-            <div id="myBtn" class="button-text">
+            <div class="button-text" onClick="handleClick(this.id)">
               <i class="fa fa-shopping-cart"></i> Cart (<count id="count-cart" >0</count>)
             </div>
           </a>
@@ -48,8 +48,8 @@
             </div><!-- item-desciption -->
             <div class="item-price-button">
               <p class="price">15.00</p>
-              <button class="add-to-cart" href="#" data-name="Eve" data-price="15.00">Add to Cart</button>
-              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+              <button class="add-to-cart" href="#" data-name="Eve" data-price="15.00" onClick="handleClick(this.id)">Add to Cart</button>
+
             </div>
           </a>
         </article><!-- .item-container-->
@@ -65,8 +65,8 @@
             </div><!-- item-desciption -->
             <div class="item-price-button">
               <p class="price">15.00</p>
-              <button class="add-to-cart" href="#" data-name="Dusk" data-price="15.00">Add to Cart</button>
-              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+              <button class="add-to-cart" href="#" data-name="Dusk" data-price="15.00" onClick="handleClick(this.id)">Add to Cart</button>
+
             </div>
           </a>
         </article><!-- .item-container-->
@@ -82,8 +82,8 @@
             </div><!-- item-desciption -->
             <div class="item-price-button">
               <p class="price">15.00</p>
-              <button class="add-to-cart" href="#" data-name="Rose" data-price="15.00">Add to Cart</button>
-              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+              <button class="add-to-cart" href="#" data-name="Rose" data-price="15.00" onClick="handleClick(this.id)">Add to Cart</button>
+
             </div>
           </a>
         </article><!-- .item-container-->
@@ -99,8 +99,8 @@
               </div><!-- item-desciption -->
             <div class="item-price-button">
               <p class="price">15.00</p>
-              <button class="add-to-cart" href="#" data-name="Avari" data-price="15.00">Add to Cart</button>
-              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+              <button class="add-to-cart" href="#" data-name="Avari" data-price="15.00" onClick="handleClick(this.id)">Add to Cart</button>
+
             </div>
           </a>
         </article><!-- .item-container-->
@@ -116,8 +116,8 @@
             </div><!-- item-desciption -->
             <div class="item-price-button">
               <p class="price">15.00</p>
-              <button class="add-to-cart" href="#" data-name="Dawn" data-price="15.00">Add to Cart</button>
-              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+              <button class="add-to-cart" href="#" data-name="Dawn" data-price="15.00" onClick="handleClick(this.id)">Add to Cart</button>
+
             </div>
           </a>
         </article><!-- .item-container-->
@@ -132,8 +132,8 @@
             </div><!-- item-desciption -->
             <div class="item-price-button">
               <p class="price">15.00</p>
-              <button class="add-to-cart" href="#" data-name="Midnight" data-price="15.00">Add to Cart</button>
-              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+              <button class="add-to-cart" href="#" data-name="Midnight" data-price="15.00" onClick="handleClick(this.id)">Add to Cart</button>
+
             </div>
           </a>
         </article><!-- .item-container-->
@@ -149,8 +149,8 @@
             </div><!-- item-desciption -->
             <div class="item-price-button">
               <p class="price">15.00</p>
-              <button class="add-to-cart" href="#" data-name="Sunset" data-price="15.00">Add to Cart</button>
-              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+              <button class="add-to-cart" href="#" data-name="Sunset" data-price="15.00" onClick="handleClick(this.id)">Add to Cart</button>
+
             </div>
           </a>
         </article><!-- .item-container-->
@@ -166,8 +166,8 @@
             </div><!-- item-desciption -->
             <div class="item-price-button">
               <p class="price">15.00</p>
-              <button class="add-to-cart" href="#" data-name="Rainbow" data-price="15.00">Add to Cart</button>
-              <a href="#cart-link" alt="Go to Cart"><button class="go-to-cart"><i class="fa fa-shopping-cart"></i></button></a>
+              <button class="add-to-cart" href="#" data-name="Rainbow" data-price="15.00" onClick="handleClick(this.id)">Add to Cart</button>
+
             </div>
           </a>
         </article><!-- .item-container-->
@@ -194,7 +194,6 @@
             </ul>
             <div class="cart-total">$ <span id="total-cart"></span></div>
             <button id="clear-cart" type="button" name="button"><i class="fa fa-times-circle-o" aria-hidden="true"></i> Clear Cart</button>
-             <a href="#top-link" alt="Back to Top"><button class="back-to-top" type="button" name="button"><i class="fa fa-arrow-up" aria-hidden="true"></i> Top</button></a>
         </div>
   </div><!--end side bar-->
 </div>

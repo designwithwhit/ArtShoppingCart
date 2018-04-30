@@ -99,9 +99,9 @@ Layouts
 --------------------------------------------------------------*/
 
 .main-area {
-  float:left;
   width:70%;
-  /*padding: 2em;*/
+  margin:0 auto;
+  padding: 2em;
 }
 
 .shopping-cart-area h2{
@@ -204,7 +204,7 @@ button:hover {
 }
 
 button.add-to-cart{
-width: 70%;
+width: 100%;
 padding: .25em;
 background-color: #000;
 color: white;
@@ -224,25 +224,32 @@ font-size: 1.5em;
 border-color:#000;
 }
 button.plus-item, button.subtract-item, button.delete-item{
-    color: white;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.5em;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 2em;
+  color:white;
 }
 
 button.plus-item{
-    background-color: #d9b354;
+  background-color: black;
 }
 button.subtract-item{
-    background-color: #4eb1c6;
+  background-color: black;
 }
 button.delete-item{
-    background-color: #ccc;
+  background-color: #ccc;
 }
-button#clear-cart, button.back-to-top{
+button#clear-cart{
   color: #000;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.25em;
-  margin-top:.25em;
+  margin-top: .25em;
+  border: 3px solid black;
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  background: transparent;
 }
 
 .cart-total{
@@ -337,7 +344,7 @@ button.back-to-top{
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 50%;
 }
 
 /* The Close Button */
