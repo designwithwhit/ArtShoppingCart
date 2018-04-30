@@ -241,11 +241,11 @@ button.delete-item{
   background-color: #ccc;
 }
 button#clear-cart{
-  color: #000;
+  color: #666;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.25em;
   margin-top: .25em;
-  border: 3px solid black;
+  border: 3px solid #666;
   width: 200px;
   height: 50px;
   text-transform: uppercase;
